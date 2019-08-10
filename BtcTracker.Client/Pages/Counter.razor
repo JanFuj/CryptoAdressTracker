@@ -1,0 +1,65 @@
+﻿@page "/counter"
+@using BtcTracker.Shared
+
+<h1>aaaa</h1>
+
+<p>Current count: @currentCount</p>
+
+
+
+<h1>@MyInput</h1>
+<input @bind-value="@MyInput" @bind-value:event="oninput" />
+
+
+<a class="btn-floating blue">
+
+    <i class="material-icons">remove</i>
+</a>
+<button class=@ButtonCssClass @onclick="@IncrementCount">Click me</button>
+
+@code {
+    bool buttonEnabled = true;
+    bool sendingRequest = false;
+    string ButtonCssClass => buttonEnabled ? "waves-effect waves-light btn" : "btn disabled";
+
+    string MyInput { get; set; }
+    string currentCount;
+    private static HttpClient Client = new HttpClient();
+    async void IncrementCount()
+    {
+        Console.WriteLine(MyInput);
+        currentCount = string.Empty;
+      
+        if (sendingRequest) return;
+        try
+        {
+
+            if (!string.IsNullOrEmpty(MyInput))
+            {
+                sendingRequest = true;
+                string url = $"blockchain.info/q/addressbalance/{MyInput}?confirmations=6";
+                Console.WriteLine(url);
+                await Task.Delay(10000);
+                var result = await Client.GetAsync($"https://{url}");
+                if (result.IsSuccessStatusCode)
+                {
+                    var response = await result.Content.ReadAsStringAsync();
+                    Console.WriteLine(response);
+                    currentCount = response;
+
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("exception");
+            Console.WriteLine(ex.Message + "fsadfas");
+
+        }
+        Console.WriteLine("end");
+        sendingRequest = false;
+        base.StateHasChanged();
+    }
+
+
+}

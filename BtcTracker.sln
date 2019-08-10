@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29111.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtcTracker.Server", "BtcTracker.Server\BtcTracker.Server.csproj", "{A9B73303-0D06-44C3-BF27-1EF69ABFD523}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtcTracker.Client", "BtcTracker.Client\BtcTracker.Client.csproj", "{87C155BB-E62D-4D98-80C4-FBD195907752}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtcTracker.Shared", "BtcTracker.Shared\BtcTracker.Shared.csproj", "{85351587-C98C-414C-87C0-92AE3A1EC45A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtcTracker.Data", "BtcTracker.Data\BtcTracker.Data.csproj", "{D7C54E48-B8B0-4AF0-A383-A36A7675A03A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9B73303-0D06-44C3-BF27-1EF69ABFD523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B73303-0D06-44C3-BF27-1EF69ABFD523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B73303-0D06-44C3-BF27-1EF69ABFD523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B73303-0D06-44C3-BF27-1EF69ABFD523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C155BB-E62D-4D98-80C4-FBD195907752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C155BB-E62D-4D98-80C4-FBD195907752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C155BB-E62D-4D98-80C4-FBD195907752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C155BB-E62D-4D98-80C4-FBD195907752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85351587-C98C-414C-87C0-92AE3A1EC45A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85351587-C98C-414C-87C0-92AE3A1EC45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85351587-C98C-414C-87C0-92AE3A1EC45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85351587-C98C-414C-87C0-92AE3A1EC45A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7C54E48-B8B0-4AF0-A383-A36A7675A03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7C54E48-B8B0-4AF0-A383-A36A7675A03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7C54E48-B8B0-4AF0-A383-A36A7675A03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7C54E48-B8B0-4AF0-A383-A36A7675A03A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0AB8617-E7C5-4313-8694-E19BAEE4879E}
+	EndGlobalSection
+EndGlobal
