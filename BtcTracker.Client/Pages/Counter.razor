@@ -21,8 +21,6 @@
     bool buttonEnabled = true;
     bool sendingRequest = false;
     string ButtonCssClass => buttonEnabled ? "waves-effect waves-light btn" : "btn disabled";
-
-
     string MyInput { get; set; }
     string currentCount;
     private static HttpClient Client = new HttpClient();
